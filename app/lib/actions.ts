@@ -100,6 +100,7 @@ export async function updateInvoice(
       SET customer_id = ${customerId}, amount = ${amountInCents}, status = ${status}
       WHERE id = ${id}
     `;
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (error) {
     // We'll log the error to the console for now
     return { message: 'Database Error: Failed to Update Invoice.' };
